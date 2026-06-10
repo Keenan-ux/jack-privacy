@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>jack privacy policy</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 0;
+    background: #0c0c0d; color: #d8d8da;
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 15px; line-height: 1.7;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 22px 96px; }
+  h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; }
+  h2 { font-size: 16px; font-weight: 600; margin: 38px 0 10px; color: #f2f2f4; }
+  .meta { color: #76767a; font-size: 13px; margin-bottom: 30px; }
+  p, li { color: #c4c4c8; }
+  ul { padding-left: 20px; }
+  li { margin: 7px 0; }
+  strong { color: #ededf0; font-weight: 600; }
+  a { color: #8ab4ff; }
+  code { background: #1a1a1c; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  .lead { color: #ededf0; }
+  hr { border: none; border-top: 1px solid #222; margin: 34px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>jack privacy policy</h1>
+  <div class="meta">last updated: 10 june 2026</div>
+
+  <p class="lead">jack is a private, on-device ai assistant. the model runs on your phone, your
+  conversations stay on your phone, and nothing you type or say is ever sent to us or anyone else.
+  this policy explains what that means in practice, in plain terms.</p>
+
+  <h2>the short version</h2>
+  <ul>
+    <li>jack has <strong>no account, no sign-in, and no login</strong>.</li>
+    <li>jack contains <strong>no analytics, no crash reporting, no advertising, and no third-party
+    trackers</strong>.</li>
+    <li>jack does <strong>not collect, transmit, or sell</strong> any personal information.</li>
+    <li>your chats are stored <strong>only on your device</strong>, encrypted at rest with a key that
+    never leaves your device. they are excluded from cloud backups by design.</li>
+    <li>the ai runs <strong>entirely on your phone</strong>. when you chat, no network request is
+    made. airplane mode works.</li>
+  </ul>
+
+  <h2>the only network activity jack itself performs</h2>
+  <p><strong>on-device ai model download (optional).</strong> to start chatting you download the
+  model file you select from a public model host (hugging face). this is a normal file download.
+  after that, the model runs entirely on your device and sends nothing over the network when you use
+  it. that is the only network request jack makes on its own.</p>
+
+  <h2>the one-time pro purchase</h2>
+  <p>jack's optional "pro" unlock is a one-time purchase processed by <strong>google play
+  billing</strong>. google processes the payment and gives jack an anonymous purchase token; jack
+  never sees your name, email, or payment details. the unlocked state is remembered on your device,
+  and google play restores it automatically on a new device. google's own privacy policy governs the
+  payment itself.</p>
+
+  <h2>optional hand-offs you explicitly trigger</h2>
+  <p>jack's actions can open another app you already have installed, passing along only what you
+  asked for. these happen only when you (or an action you enabled and confirmed) choose them; jack
+  never does them in the background:</p>
+  <ul>
+    <li><strong>drafts.</strong> "text someone" or "email someone" opens your sms or email app with a
+    draft. you review and send it yourself. the message goes through that app, under its policy.</li>
+    <li><strong>web search and maps.</strong> these actions open your browser or maps app with your
+    query. those apps and their own policies govern what happens next.</li>
+    <li><strong>timers, alarms, camera, flashlight, and similar device actions</strong> use android's
+    standard mechanisms on your device. nothing leaves the phone.</li>
+  </ul>
+
+  <h2>permissions</h2>
+  <p>jack requests only the permissions needed for features you actually use: the microphone for
+  voice input to audio-capable models (recorded on-device, sent to the on-device model, never
+  uploaded), contacts read access only to resolve a name into a number when you ask for a text draft,
+  the internet permission for model downloads, and special access you grant explicitly in android
+  settings (usage access for "about this phone" answers, do-not-disturb access for the quiet-mode
+  action). each is used locally, for the stated feature, and nothing is sent off the device as a
+  result.</p>
+
+  <h2>the optional accessibility service</h2>
+  <p>jack offers an opt-in accessibility service used for exactly one thing: performing the system
+  "back" navigation action when you ask for it. it is configured so it <strong>cannot read your
+  screen</strong> and it stays off until you enable it in android's accessibility settings. it is
+  never used for ads, data collection, or anything else.</p>
+
+  <h2>data deletion</h2>
+  <p>because nothing is stored off your device, there is nothing for us to delete on a server.
+  deleting a chat removes it from your device; removing a model frees its storage. uninstalling jack
+  removes everything.</p>
+
+  <h2>children</h2>
+  <p>jack is a general-purpose assistant rated for adults and is not directed at children.</p>
+
+  <h2>changes</h2>
+  <p>if this policy changes, the updated version will be posted at this url with a new "last updated"
+  date.</p>
+
+  <h2>contact</h2>
+  <p>questions about privacy: <a href="mailto:keenan@boothcheck.com">keenan@boothcheck.com</a></p>
+</main>
+</body>
+</html>
