@@ -29,7 +29,7 @@
 <body>
 <main>
   <h1>jack privacy policy</h1>
-  <div class="meta">last updated: 10 june 2026</div>
+  <div class="meta">last updated: 6 october 2026</div>
 
   <p class="lead">jack is a private, on-device ai assistant. the model runs on your phone, your
   conversations stay on your phone, and nothing you type or say is ever sent to us or anyone else.
@@ -48,10 +48,15 @@
   </ul>
 
   <h2>the only network activity jack itself performs</h2>
-  <p><strong>on-device ai model download (optional).</strong> to start chatting you download the
-  model file you select from a public model host (hugging face). this is a normal file download.
-  after that, the model runs entirely on your device and sends nothing over the network when you use
-  it. that is the only network request jack makes on its own.</p>
+  <p><strong>model downloads.</strong> to start chatting you download the model file you select from
+  a public host (hugging face or github). if you turn on the optional memory feature, jack also
+  downloads a small helper model from github once. these are normal file downloads. after that, the
+  models run entirely on your device and send nothing over the network when you use them.</p>
+  <p><strong>update checks.</strong> about every six hours, while jack is open, it downloads a small
+  public file from github that lists model updates and occasional notices, such as "please update the
+  app". this is a plain file download: nothing about you or your chats is sent, and no account or
+  identifier is involved. like any download, the host sees the request arrive.</p>
+  <p>these are the only network requests jack makes on its own.</p>
 
   <h2>the one-time pro purchase</h2>
   <p>jack's optional "pro" unlock is a one-time purchase processed by <strong>google play
@@ -77,7 +82,7 @@
   <p>jack requests only the permissions needed for features you actually use: the microphone for
   voice input to audio-capable models (recorded on-device, sent to the on-device model, never
   uploaded), contacts read access only to resolve a name into a number when you ask for a text draft,
-  the internet permission for model downloads, and special access you grant explicitly in android
+  the internet permission for model downloads and update checks, and special access you grant explicitly in android
   settings (usage access for "about this phone" answers, do-not-disturb access for the quiet-mode
   action). each is used locally, for the stated feature, and nothing is sent off the device as a
   result.</p>
