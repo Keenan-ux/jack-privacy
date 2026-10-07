@@ -52,6 +52,12 @@
   a public host (hugging face or github). if you turn on the optional memory feature, jack also
   downloads a small helper model from github once. these are normal file downloads. after that, the
   models run entirely on your device and send nothing over the network when you use them.</p>
+  <p><strong>offline facts.</strong> if offline facts are on (they are by default), jack downloads its
+  offline encyclopedia, a single file of about 76 mb, from github: right after you download a model, or
+  when you turn offline facts on. it is a plain file download: nothing about you or your chats is sent,
+  and no account or identifier is involved. after that, fact lookups run entirely on your device.
+  turning offline facts off deletes the encyclopedia from your phone; turning them back on downloads it
+  again.</p>
   <p><strong>update checks.</strong> about every six hours, while jack is open, it downloads a small
   public file from github that lists model updates and occasional notices, such as "please update the
   app". this is a plain file download: nothing about you or your chats is sent, and no account or
@@ -86,7 +92,7 @@
   <p>jack requests only the permissions needed for features you actually use: the microphone for
   voice input to audio-capable models (recorded on-device, sent to the on-device model, never
   uploaded), contacts read access only to resolve a name into a number when you ask for a text draft,
-  the internet permission for model downloads and update checks, and special access you grant explicitly in android
+  the internet permission for model and offline-facts downloads and update checks, and special access you grant explicitly in android
   settings (usage access for "about this phone" answers, do-not-disturb access for the quiet-mode
   action). each is used locally, for the stated feature, and nothing is sent off the device as a
   result.</p>
